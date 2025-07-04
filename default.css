@@ -43,7 +43,7 @@
     .navigation ul {
         /* background-color: yellow; */
         display: flex;
-        gap: 30px;
+        gap: 20px;
         margin: 0px;
         padding: 0px;
     }
@@ -79,11 +79,24 @@
         align-items: center;
     }
 
+    .navigation-links-1 li{
+        margin-right: 20px;
+    }
+
     .navigation-links-1 a{
         align-items: center;
         color: var(--fifth-color);
+        transition: all 0.3s ease;
     }
 
+    .navigation-links-1 a:hover{
+        color: var(--primary-color);
+        /* font-weight: 700; */
+        text-shadow: 0 0.3px 0 currentColor;
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px; /* Atur ketebalan */
+        text-underline-offset: 3px;     /* (Opsional) Jarak dari teks */
+    }
 
     .navigation-sub-2 li a{
         color: var(--fourth-color);
@@ -106,6 +119,11 @@
 
     .social-media-links a{
         color: var(--fifth-color);
+        font-size: 20px;
+    }
+
+     .social-media-links a:hover{
+        color: var(--primary-color);
     }
 
     .social-media ul li {
