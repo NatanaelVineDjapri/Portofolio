@@ -187,6 +187,30 @@
         padding-bottom: 33px;
     }
 
+    .typing-container{
+        /* display: inline-block; */
+        border-right: 2px solid var(--primary-color);
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+        animation: typing 3s steps(17) forwards, blink 1s step-end infinite 2.5s;
+    }
+
+    @keyframes typing{
+        from{
+            width: 0;
+        }
+        to{
+            width: 100%;
+        }
+    }
+
+    @keyframes blink{
+        50% { 
+            border-color: transparent; 
+        }
+    }
+
     .left-link a {
         display: inline-flex;   
         align-items: center;
@@ -201,6 +225,106 @@
 
     .left-link ion-icon {
         font-size: 18px; 
+    }
+
+    .content-about{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-about{
+        display: flex;
+        align-items: center;
+        gap: 50px;
+        background-color: rgba(196,196,196,0.2);
+        border-radius: 12px;
+    }
+
+    .about-me-p{
+        text-align: justify;
+        font-size: 15px;
+        margin-right: 30px;
+    }
+
+    .title-about{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 26px;
+        font-weight: 600;
+        color: var(--third-color);
+        margin-bottom: 30px;
+    }
+
+    .title-line{
+        height: 3px;
+        /* width: 70%; */
+        background-color: var(--primary-color);
+        flex-grow: 1;
+    }
+
+    .main-about img{
+        width: 300px;
+        border-radius: 50%;
+        margin-top: 30px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+    }
+
+    .name{
+        font-weight: 700;
+    }
+
+    .education{
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    .education-title{
+        text-align: center;
+        /* font-size: 14px; */
+        /* font-weight: 600; */
+    }
+
+    .education-title h1{
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    .education-title p{
+        font-size: 12px;
+        font-weight: 500;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+    .education-background{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        /* width: 1200px; */
+    }
+
+    .education-schools{
+        text-align: center;
+    }
+
+    .education-schools img{
+        width: 220px;
+        border: 2px solid rgba(196,196,196,0.5);
+        border-radius: 16px;
+    }
+
+    .education-schools h1{
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 2px;
+    }
+
+    .education-schools p{
+        font-size: 12px;
+        font-weight: 400;
+        font-style: italic;
     }
 
 
