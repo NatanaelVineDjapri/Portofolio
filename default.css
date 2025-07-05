@@ -33,6 +33,7 @@ html, body {
     background-color: var(--fourth-color);
     width: 100%;
     display: flex;
+    justify-content: space-between;
     padding: 0rem 3.125rem;
     align-items: center;
     padding: 0.9375rem 0rem;
@@ -102,7 +103,7 @@ html, body {
 
 .sub-2-first{
     color: var(--fourth-color);
-    margin-left: 20rem;
+    margin-right: 1.5rem;
     background-color: var(--primary-color);
     padding: 0.5rem 1.25rem;
     border-radius: 0.5rem;
@@ -117,21 +118,7 @@ html, body {
     display: none;
 }
 
-@media (max-width: 1366px){
-    html{
-        font-size: 75%;
-    }
-}
-@media (max-width: 768px){
-    html{
-        font-size: 62.5%;
-    }
-}
-@media (max-width: 450px){
-    html{
-        font-size: 55%;
-    }
-}
+
 
 span{
     color : var(--primary-color);
@@ -507,4 +494,129 @@ span{
     align-items: center;
     gap: 0.3125rem;
     color: var(--fourth-color);
+}
+
+@media (max-width: 1366px){
+    html{
+        font-size: 75%;
+    }
+}
+
+
+@media (max-width: 450px){
+    html{
+        /* font-size: 62.5%; */
+    }
+
+    #menu{
+        display: inline-block;
+    }
+
+    .sub-2-first{
+        margin-right: 0rem;
+    }
+
+    .sub-2-second{
+        margin-right: 1rem;
+    }
+
+    .navigation-container{
+        width: 55%;
+    }
+    .navigation .navigation-sub .navigation-links-1{
+        position: absolute;
+        top: calc(100% - 10px);;
+        right: -100%;
+        background-color: var(--primary-color);
+        width: 20rem;
+        height: 100vh;
+        transition: 300ms;
+        text-align: justify;
+    }
+
+    
+    .navigation-links-1 {
+        flex-direction: column; /* atau ganti jadi display: block juga bisa */
+    }
+
+
+    .navigation-sub .navigation-links-1.active{
+        right: 0;
+    }
+
+    .navigation-sub .navigation-links-1 a{
+        color: var(--fourth-color);
+        display: block;
+        margin: 1.25rem;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+     }
+
+    .content-home{
+        width: 60%;
+        display: block;
+     }
+
+    img {
+       width: none;
+    }
+
+    .content{
+        margin-left: 50px;
+        margin-right: 50px;
+        flex-wrap: wrap;
+    }
+
+    h3 {
+        font-size: 1rem !important;
+        /* color: red !important; */
+    }
+
+    .content-about{
+        margin-right: 50px;
+    }
+    .typing-container{
+        font-size: 1.5rem !important;
+    }
+
+    .home-left p {
+        width: 70%;
+    }
+
+    .profile-picture{
+        width: 20rem;
+    }
+
+    .title-about{
+        font-size: 120% ;
+        width: 55%;
+    }
+
+    .main-about{
+        display: block;
+        width: 55%;
+        /* margin: 0 auto; */
+    }
+
+    .about-me-p{
+        margin-left: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .main-about img{
+        border-radius: 3rem;
+        width: 10rem;
+        display: block;
+        margin: 0 auto;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+}
+
+
+@media (max-width: 450px){
+    html{
+        font-size: 55%;
+    }
 }
