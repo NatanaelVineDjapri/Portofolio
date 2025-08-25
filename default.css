@@ -14,6 +14,9 @@ html, body {
     height: 100%;
     font-size: 100%;
 }
+section {
+  scroll-margin-top: 100px; 
+}
 
 * {
     /* box-sizing: border-box; */
@@ -160,10 +163,12 @@ span{
     justify-content: space-between;
     align-items: center;
     gap: 1.875rem;
+    padding-top: 2rem;
+    padding-bottom: 4.125rem;
 }
 
 .profile-picture{
-    width: 25.9375rem;
+    width: 20rem;
     height: auto;
     clip-path: circle(55% at 50% 50%);
 }
@@ -222,20 +227,62 @@ span{
 }
 
 .left-link ion-icon {
-    font-size: 0.0703125rem; 
+    /* font-size: 0.0703125rem;  */
 }
 
 .content-about{
     display: flex;
     flex-direction: column;
+    margin-bottom: 2rem;
 }
 
 .main-about{
+    align-items: center;
+    
+    background-color: rgba(196,196,196,0.2);
+    border-radius: 0.75rem;
+    padding-bottom: 1.2rem; 
+}
+
+.main-about-1{
     display: flex;
     align-items: center;
     gap: 3.125rem;
-    background-color: rgba(196,196,196,0.2);
+    /* padding-bottom: 1rem; */
+   
+}
+
+.main-about-2{
+    display: flex;
+    width: 95%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    padding: 1rem 0rem 1rem 0rem;
+    /* margin-bottom: 100px; */
+    background-color: var(--fourth-color);
     border-radius: 0.75rem;
+   
+}
+
+.about-2-1 {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+}
+
+.about-2-1 h1{
+    color: var(--third-color);
+    font-size: 2rem;
+
+}
+
+.about-2-1 p{
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
 }
 
 .about-me-p{
@@ -331,7 +378,9 @@ span{
 }
 
 .content-skills{
-    margin-bottom: 1.875rem;
+    /* margin-bottom: 1.875rem; */
+    padding-top: 4.125rem;
+    padding-bottom: 5.125rem;
 }
 
 .programming-languages{
@@ -360,6 +409,113 @@ span{
 
 .language .desc-language p{
     font-size: 0.75rem;
+}
+
+.all-skills{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.skills-1{
+    background-color: rgba(196,196,196,0.2);
+    width: 30%;
+    border-radius: 1.2rem;
+    height: 20rem;
+}
+
+.skills-1-utama{
+    display: flex;
+    gap: 1.25rem;
+    padding-left: 2rem;
+    padding-top: 20px;
+}
+
+.skills-1-utama h1{
+    font-size: 1rem;
+}
+
+.skills-1-utama p{
+    font-size: 0.75rem;
+    font-style: italic;
+}
+
+.skills-1-utama ion-icon{
+    font-size: 1.5rem;
+    padding-top: 7px;
+    color: var(--primary-color);
+}
+
+.skills-container{
+    /* background-color: yellow; */
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+
+    /* justify-content: center;  
+     */
+}
+.skill{
+    display: flex;
+    
+    flex-direction: column;
+    /* padding-top: 1rem;
+    padding-left: 2rem; */
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.skills-persc{
+    display: flex;
+    font-size: 0.8rem;
+    justify-content: space-between;
+    width: 70%;
+    padding-bottom: 0.3rem;
+}
+
+.skills-persc span{
+    color: var(--third-color);
+    /* font-size: 0.7rem; */
+}
+
+
+.bar{
+  height: 6px;              
+  width: 70%;
+  background: #e0e0e0;       
+  border-radius: 5px;        
+  overflow: hidden;
+}
+
+.fill-70{
+  height: 100%;  
+  width: 70%;                
+  background: var(--primary-color);  
+}
+
+.fill-20{
+  height: 100%;  
+  width: 20%;                
+  background: var(--primary-color);  
+}
+
+.fill-60{
+  height: 100%;  
+  width: 60%;                
+  background: var(--primary-color);  
+}
+
+.fill-50{
+  height: 100%;  
+  width: 50%;                
+  background: var(--primary-color);  
+}
+
+.fill-80{
+  height: 100%;  
+  width: 80%;                
+  background: var(--primary-color);  
 }
 
 .all-projects{
@@ -420,27 +576,43 @@ span{
     font-size: 0.75rem;
 }
 
+.content-certificate{    /* margin-bottom: 1.875rem; */
+    padding-top: 4.125rem;
+    padding-bottom: 5.125rem;
+}
+
 .footer {
     width: 100%;
-    padding: 0;
+    padding: 1.5rem 0rem;    
+    /* padding: 0; */
     height: 6.25rem;
     background-color: var(--primary-color);
     display: flex;
+    justify-content: center;
     align-items: center;
+    /* box-sizing: border-box; */
 }
 
 .footer-container {
     width: 100%;
+    max-width: 1200px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
 }
 
 .title-footer{
     /* margin-left: 1.875rem; */
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
+
+.title-footer-main{
+    padding-bottom: 20px;
+}
+
 
 .title-footer a {
     color : var(--fourth-color);
@@ -462,8 +634,8 @@ span{
 }
 
 .quotes p{
-    font-size: 0.75rem;
-    margin-left: 1.25rem;
+    font-size: 1rem;
+    /* margin-left: 1.25rem; */
 }
 
 .author-quotes{
@@ -474,6 +646,7 @@ span{
     display: flex;  
     justify-content: center;
     align-items: center;
+    padding-right: 1rem; 
     /* margin-right: 3.125rem; */
 }
 
@@ -490,13 +663,20 @@ span{
 }
 
 .information-footer ul li a {
-    font-size: 0.8125rem;
+    text-transform: capitalize;
+    font-size: 0,825rem;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     gap: 0.3125rem;
     color: var(--fourth-color);
 }
+
+.quotes p {
+    color: var(--fourth-color);
+    font-size: 0,725rem;
+}
+
 
 @media (max-width: 1366px){
     html{
